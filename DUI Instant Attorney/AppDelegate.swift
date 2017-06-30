@@ -7,15 +7,101 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import Firebase
+import GoogleMaps
+import OneSignal
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyBoqcEKVc3mOVjNEuEhznE76h5SV8Zxe9o")
+
+        FirebaseApp.configure()
+        
+        IQKeyboardManager.sharedManager().enable = true
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        /*
+        if #available(iOS 10.0, *) {
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+            
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+            
+            // For iOS 10 data message (sent via FCM)
+            //FIRMessaging.messaging().remoteMessageDelegate = self
+            
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+        
+        application.registerForRemoteNotifications()
+        */
+
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "1da67ee1-49c4-416a-b812-02a1aeb68d06", handleNotificationReceived: { (notification) in
+            //print("Received Notification - \(notification?.payload.notificationID)")
+        }, handleNotificationAction: { (result) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let window = self.window, let rootViewController = window.rootViewController {
+                var currentController = rootViewController
+                while let presentedController = currentController.presentedViewController {
+                    currentController = presentedController
+                }
+                
+                if currentController is MessageViewController {
+                    
+                } else {
+                    let messageViewController = storyboard.instantiateViewController(withIdentifier: "messageView") as! MessageViewController
+                    //self.present(messageViewController, animated:true, completion:nil)
+                    let navigationController = application.windows[0].rootViewController as! UINavigationController
+                    
+                    navigationController.pushViewController(messageViewController,  animated: true)
+                }
+            } else {
+                /*
+                let initialViewController : UIViewController = storyboard.instantiateViewController(withIdentifier: "initalViewController") as UIViewController
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+                
+                let messageViewController = storyboard.instantiateViewController(withIdentifier: "messageView") as! MessageViewController
+                let navigationController = initialViewController as! UINavigationController
+                navigationController.pushViewController(messageViewController,  animated: true)
+                 */
+            }
+        }, settings: [kOSSettingsKeyAutoPrompt : true, kOSSettingsKeyInAppAlerts : false])
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification
+        
+        OneSignal.idsAvailable({ (userId, pushToken) in
+            print("UserId:%@", userId!);
+            if (pushToken != nil) {
+                NSLog("Sending Test Noification to this device now");
+                //OneSignal.postNotification(["contents": ["en": "Test Message"], "include_player_ids": [userId]]);
+                
+                UserDefaults.standard.set(userId, forKey: "OneSignalId")
+                
+                if Auth.auth().currentUser != nil {
+                    let uid = Auth.auth().currentUser!.uid
+                    let ref = Database.database().reference().child("users/\(uid)/OneSignalId")
+                    ref.setValue(userId!)
+                }
+            }
+        })
+        
         return true
     }
 

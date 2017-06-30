@@ -7,21 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9715EDDE1EEEF96500985824 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9715EDDD1EEEF96500985824 /* FontAwesome.otf */; };
+		9715EDE01EEF01FE00985824 /* MyColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715EDDF1EEF01FE00985824 /* MyColors.swift */; };
+		9715EDE21EEF0E9400985824 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715EDE11EEF0E9400985824 /* AddFriendsViewController.swift */; };
 		977CE3641EE5EDDC00DC73DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CE3631EE5EDDC00DC73DC /* AppDelegate.swift */; };
-		977CE3661EE5EDDC00DC73DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CE3651EE5EDDC00DC73DC /* ViewController.swift */; };
+		977CE3661EE5EDDC00DC73DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CE3651EE5EDDC00DC73DC /* RegisterViewController.swift */; };
 		977CE3691EE5EDDC00DC73DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977CE3671EE5EDDC00DC73DC /* Main.storyboard */; };
 		977CE36B1EE5EDDC00DC73DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977CE36A1EE5EDDC00DC73DC /* Assets.xcassets */; };
 		977CE36E1EE5EDDC00DC73DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977CE36C1EE5EDDC00DC73DC /* LaunchScreen.storyboard */; };
+		977CE3771EE5F4FB00DC73DC /* globalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CE3751EE5F4FB00DC73DC /* globalFunctions.swift */; };
+		977CE3781EE5F4FB00DC73DC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CE3761EE5F4FB00DC73DC /* Reachability.swift */; };
+		A6AFCB5F459624F589A704C4 /* Pods_DUI_Instant_Attorney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2768D388EC7536DB1A085 /* Pods_DUI_Instant_Attorney.framework */; };
+		FA1300BA1EF4571000C7CAB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1300B91EF4571000C7CAB7 /* HomeViewController.swift */; };
+		FA2C2C7A1EF45D800032D447 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C2C791EF45D800032D447 /* NearbyViewController.swift */; };
+		FA2C2C7C1EF468970032D447 /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C2C7B1EF468970032D447 /* FamilyViewController.swift */; };
+		FA40A7671EFB55AF00001D70 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40A7661EFB55AF00001D70 /* ChatViewController.swift */; };
+		FA40A7691EFB5A6D00001D70 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40A7681EFB5A6D00001D70 /* UIImage+Gif.swift */; };
+		FA626E451EF388A200461839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA626E441EF388A200461839 /* GoogleService-Info.plist */; };
+		FA8F8BF51EF9539600F1FEA8 /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F8BF41EF9539600F1FEA8 /* globalVariables.swift */; };
+		FAD5CBD31EFADC17000F0E8A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5CBD21EFADC17000F0E8A /* MessageViewController.swift */; };
+		FAEACB2D1EF533AA002F6E2E /* AttorneyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEACB2C1EF533AA002F6E2E /* AttorneyLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A896C667D1C3D59CF999471 /* Pods-DUI Instant Attorney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DUI Instant Attorney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DUI Instant Attorney/Pods-DUI Instant Attorney.debug.xcconfig"; sourceTree = "<group>"; };
+		7B343469852D569E2F997CAC /* Pods-DUI Instant Attorney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DUI Instant Attorney.release.xcconfig"; path = "Pods/Target Support Files/Pods-DUI Instant Attorney/Pods-DUI Instant Attorney.release.xcconfig"; sourceTree = "<group>"; };
+		9715EDDD1EEEF96500985824 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		9715EDDF1EEF01FE00985824 /* MyColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColors.swift; sourceTree = "<group>"; };
+		9715EDE11EEF0E9400985824 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
 		977CE3601EE5EDDC00DC73DC /* DUI Instant Attorney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DUI Instant Attorney.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		977CE3631EE5EDDC00DC73DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		977CE3651EE5EDDC00DC73DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		977CE3651EE5EDDC00DC73DC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		977CE3681EE5EDDC00DC73DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		977CE36A1EE5EDDC00DC73DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977CE36D1EE5EDDC00DC73DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977CE36F1EE5EDDC00DC73DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977CE3751EE5F4FB00DC73DC /* globalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = globalFunctions.swift; sourceTree = "<group>"; };
+		977CE3761EE5F4FB00DC73DC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A4D2768D388EC7536DB1A085 /* Pods_DUI_Instant_Attorney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DUI_Instant_Attorney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1300B91EF4571000C7CAB7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA2C2C791EF45D800032D447 /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		FA2C2C7B1EF468970032D447 /* FamilyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
+		FA40A7661EFB55AF00001D70 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FA40A7681EFB5A6D00001D70 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		FA626E441EF388A200461839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA626E461EF3896C00461839 /* DUI Instant Attorney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DUI Instant Attorney.entitlements"; sourceTree = "<group>"; };
+		FA8F8BF41EF9539600F1FEA8 /* globalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = globalVariables.swift; sourceTree = "<group>"; };
+		FAD5CBD21EFADC17000F0E8A /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		FAEACB2C1EF533AA002F6E2E /* AttorneyLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttorneyLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +62,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AFCB5F459624F589A704C4 /* Pods_DUI_Instant_Attorney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2011CD087C5660421D1B9E74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2768D388EC7536DB1A085 /* Pods_DUI_Instant_Attorney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D3582532E70FC2066F19B3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A896C667D1C3D59CF999471 /* Pods-DUI Instant Attorney.debug.xcconfig */,
+				7B343469852D569E2F997CAC /* Pods-DUI Instant Attorney.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9715EDDC1EEEF95400985824 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				9715EDDD1EEEF96500985824 /* FontAwesome.otf */,
+			);
+			name = CustomFonts;
+			sourceTree = "<group>";
+		};
 		977CE3571EE5EDDC00DC73DC = {
 			isa = PBXGroup;
 			children = (
 				977CE3621EE5EDDC00DC73DC /* DUI Instant Attorney */,
 				977CE3611EE5EDDC00DC73DC /* Products */,
+				2D3582532E70FC2066F19B3B /* Pods */,
+				2011CD087C5660421D1B9E74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +115,26 @@
 		977CE3621EE5EDDC00DC73DC /* DUI Instant Attorney */ = {
 			isa = PBXGroup;
 			children = (
+				FA626E461EF3896C00461839 /* DUI Instant Attorney.entitlements */,
+				9715EDDC1EEEF95400985824 /* CustomFonts */,
 				977CE3631EE5EDDC00DC73DC /* AppDelegate.swift */,
-				977CE3651EE5EDDC00DC73DC /* ViewController.swift */,
+				977CE3651EE5EDDC00DC73DC /* RegisterViewController.swift */,
+				9715EDE11EEF0E9400985824 /* AddFriendsViewController.swift */,
+				FA2C2C7B1EF468970032D447 /* FamilyViewController.swift */,
+				FA1300B91EF4571000C7CAB7 /* HomeViewController.swift */,
+				FA2C2C791EF45D800032D447 /* NearbyViewController.swift */,
+				FAEACB2C1EF533AA002F6E2E /* AttorneyLocationViewController.swift */,
+				FAD5CBD21EFADC17000F0E8A /* MessageViewController.swift */,
+				FA40A7661EFB55AF00001D70 /* ChatViewController.swift */,
 				977CE3671EE5EDDC00DC73DC /* Main.storyboard */,
 				977CE36A1EE5EDDC00DC73DC /* Assets.xcassets */,
+				977CE3751EE5F4FB00DC73DC /* globalFunctions.swift */,
+				977CE3761EE5F4FB00DC73DC /* Reachability.swift */,
+				9715EDDF1EEF01FE00985824 /* MyColors.swift */,
+				FA8F8BF41EF9539600F1FEA8 /* globalVariables.swift */,
+				FA40A7681EFB5A6D00001D70 /* UIImage+Gif.swift */,
 				977CE36C1EE5EDDC00DC73DC /* LaunchScreen.storyboard */,
+				FA626E441EF388A200461839 /* GoogleService-Info.plist */,
 				977CE36F1EE5EDDC00DC73DC /* Info.plist */,
 			);
 			path = "DUI Instant Attorney";
@@ -71,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 977CE3721EE5EDDC00DC73DC /* Build configuration list for PBXNativeTarget "DUI Instant Attorney" */;
 			buildPhases = (
+				EF0EAC79AC4B0D885BBF11E7 /* [CP] Check Pods Manifest.lock */,
 				977CE35C1EE5EDDC00DC73DC /* Sources */,
 				977CE35D1EE5EDDC00DC73DC /* Frameworks */,
 				977CE35E1EE5EDDC00DC73DC /* Resources */,
+				657D762C19CD33BCDD1F3C58 /* [CP] Embed Pods Frameworks */,
+				A6E049C2F2870EF8A29582CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +175,16 @@
 				TargetAttributes = {
 					977CE35F1EE5EDDC00DC73DC = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Q45EDYR9DX;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,19 +213,81 @@
 			files = (
 				977CE36E1EE5EDDC00DC73DC /* LaunchScreen.storyboard in Resources */,
 				977CE36B1EE5EDDC00DC73DC /* Assets.xcassets in Resources */,
+				FA626E451EF388A200461839 /* GoogleService-Info.plist in Resources */,
+				9715EDDE1EEEF96500985824 /* FontAwesome.otf in Resources */,
 				977CE3691EE5EDDC00DC73DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		657D762C19CD33BCDD1F3C58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DUI Instant Attorney/Pods-DUI Instant Attorney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E049C2F2870EF8A29582CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DUI Instant Attorney/Pods-DUI Instant Attorney-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0EAC79AC4B0D885BBF11E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		977CE35C1EE5EDDC00DC73DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				977CE3661EE5EDDC00DC73DC /* ViewController.swift in Sources */,
+				9715EDE21EEF0E9400985824 /* AddFriendsViewController.swift in Sources */,
+				9715EDE01EEF01FE00985824 /* MyColors.swift in Sources */,
+				FA40A7691EFB5A6D00001D70 /* UIImage+Gif.swift in Sources */,
+				977CE3661EE5EDDC00DC73DC /* RegisterViewController.swift in Sources */,
 				977CE3641EE5EDDC00DC73DC /* AppDelegate.swift in Sources */,
+				977CE3781EE5F4FB00DC73DC /* Reachability.swift in Sources */,
+				FA2C2C7A1EF45D800032D447 /* NearbyViewController.swift in Sources */,
+				FA8F8BF51EF9539600F1FEA8 /* globalVariables.swift in Sources */,
+				FA2C2C7C1EF468970032D447 /* FamilyViewController.swift in Sources */,
+				FA1300BA1EF4571000C7CAB7 /* HomeViewController.swift in Sources */,
+				FA40A7671EFB55AF00001D70 /* ChatViewController.swift in Sources */,
+				FAEACB2D1EF533AA002F6E2E /* AttorneyLocationViewController.swift in Sources */,
+				FAD5CBD31EFADC17000F0E8A /* MessageViewController.swift in Sources */,
+				977CE3771EE5F4FB00DC73DC /* globalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +410,15 @@
 		};
 		977CE3731EE5EDDC00DC73DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A896C667D1C3D59CF999471 /* Pods-DUI Instant Attorney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DUI Instant Attorney/DUI Instant Attorney.entitlements";
+				DEVELOPMENT_TEAM = Q45EDYR9DX;
 				INFOPLIST_FILE = "DUI Instant Attorney/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.balazs.DUI-Instant-Attorney";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dcmmoguls.DUI-Instant-Attorney";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,11 +426,15 @@
 		};
 		977CE3741EE5EDDC00DC73DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B343469852D569E2F997CAC /* Pods-DUI Instant Attorney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DUI Instant Attorney/DUI Instant Attorney.entitlements";
+				DEVELOPMENT_TEAM = Q45EDYR9DX;
 				INFOPLIST_FILE = "DUI Instant Attorney/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.balazs.DUI-Instant-Attorney";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dcmmoguls.DUI-Instant-Attorney";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,6 +459,7 @@
 				977CE3741EE5EDDC00DC73DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
